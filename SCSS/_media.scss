@@ -1,0 +1,117 @@
+$lille-max:499px;
+$mellem-min:500px;
+$mellem-max:1000px;
+$stor-min:1001px;
+
+$lille:0px,499px;
+$mellem:500px,1000px;
+$stor:1001px;
+
+// mellem skærem
+@media (max-width:$mellem-max) and (min-width:$mellem-min) {
+    .container {
+        width: 90vw;
+    } 
+    
+    .col-4 {
+        width: 48%;
+        
+        &:last-child {
+            width: 98%;
+            
+            img {
+            height: auto;
+            }
+        }
+         img {
+            max-height: 40vw;
+            }
+         }
+    }
+    
+article:hover {
+    background-color: lightgreen;
+    
+    p {
+        background-color: aqua;
+    }
+}
+
+    nav {
+    background-color: greenyellow;
+    ul { 
+        li {
+            margin: 15px auto;            
+            margin-left: auto;
+            }
+        }
+    }
+
+// store skærme /*
+@media (min-width:$stor-min){
+    main {
+    width: 100%;
+    display: block;
+    height: 60vh;
+}
+    
+    article:hover {
+        background-color: lightpink;
+        
+        p{
+            background-color: red;
+        }
+    }
+    nav {
+    background-color: deeppink;
+    ul { 
+        text-align: center;
+        li {
+            line-height: 3;
+            margin: 50px;
+            display: inline;
+            margin-left: 50px;
+            }
+        }
+    }
+    .container {
+        max-width: 960px;
+    }
+}
+
+//små skærme
+@media (max-width:$lille-max){
+    article:hover {
+        background-color: red;
+        
+        p{
+            background-color: greenyellow;
+        }
+    }
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+    .container {
+        width: 85vw;
+        padding: 5vw;
+        }
+    
+    .col-4 {
+        width: 98%;
+        img {
+        max-height: 70vw;
+        }
+    }
+    
+    
+    nav {
+    background-color: skyblue;
+    ul { 
+        li {
+            margin: auto;            
+            margin-left: auto;
+            }
+        }
+    }
+}

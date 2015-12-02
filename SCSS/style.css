@@ -1,0 +1,157 @@
+/* line 1, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 10, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 13, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+body {
+  line-height: 1; }
+
+/* line 17, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 20, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 23, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 27, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Her er mit eget scss */
+/* line 33, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+.container {
+  width: 70vw;
+  margin: auto; }
+
+/* line 38, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+.container-fuild {
+  min-height: 1px;
+  border: 1px;
+  width: 100%; }
+
+/* line 44, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+.row {
+  width: 100%; }
+
+/* line 49, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+.col-4 .col-5 .col-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 1%;
+  padding-left: 1%;
+  box-sizing: border-box; }
+
+/* line 57, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+.col-12 {
+  width: 98%;
+  margin: 1%; }
+
+/* line 62, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+.col-5 {
+  width: 18%;
+  margin: 1%;
+  float: left; }
+
+/* line 69, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+.col-4 {
+  margin: 0.5%;
+  width: 32.333%;
+  float: left;
+  display: inline; }
+
+/* line 78, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+article {
+  border: 2px solid black;
+  border-radius: 7px;
+  box-sizing: border-box; }
+  /* line 83, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+  article img {
+    border: 0px;
+    width: 100%; }
+  /* line 87, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+  article p {
+    line-height: 1.5;
+    font-size: 16px; }
+  /* line 91, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+  article:hover {
+    background-color: rgba(255, 0, 0, 0.3); }
+    /* line 93, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+    article:hover p {
+      color: royalblue; }
+    /* line 96, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+    article:hover img {
+      opacity: 0.7; }
+
+/* line 102, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+nav {
+  background-color: deeppink;
+  width: 100%; }
+  /* line 105, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+  nav ul {
+    text-align: center; }
+    /* line 107, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+    nav ul li {
+      line-height: 3;
+      margin: 50px;
+      display: inline;
+      margin-left: 50px; }
+      /* line 112, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+      nav ul li a {
+        text-decoration: none;
+        color: black; }
+        /* line 116, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+        nav ul li a:hover {
+          color: aqua; }
+
+/* line 124, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+footer {
+  bottom: 0px; }
+  /* line 126, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+  footer ul {
+    box-sizing: border-box; }
+    /* line 128, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+    footer ul li {
+      box-sizing: border-box;
+      margin-top: 10px; }
+      /* line 131, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+      footer ul li a {
+        text-decoration: none;
+        color: black; }
+        /* line 135, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+        footer ul li a:hover {
+          color: aqua; }
+
+/* line 145, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+h1 {
+  font-size: 30px; }
+
+/* line 149, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+#last {
+  box-sizing: border-box;
+  border-left: 2px dotted black;
+  padding-left: 5px; }
+
+/* line 155, C:/Visulasering/web/kaspersteensig/SCSS/style.scss */
+hr.style-two {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+
+/*# sourceMappingURL=style.css.map */

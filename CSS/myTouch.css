@@ -1,0 +1,310 @@
+/* line 1, ../SCSS/style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 10, ../SCSS/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 13, ../SCSS/style.scss */
+body {
+  line-height: 1;
+}
+
+/* line 17, ../SCSS/style.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 20, ../SCSS/style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 23, ../SCSS/style.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 27, ../SCSS/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Her er mit eget scss */
+/* line 33, ../SCSS/style.scss */
+.container {
+  width: 70vw;
+  margin: auto;
+}
+
+/* line 38, ../SCSS/style.scss */
+.container-fuild {
+  min-height: 1px;
+  border: 1px;
+  width: 100%;
+}
+
+/* line 44, ../SCSS/style.scss */
+.row {
+  width: 100%;
+}
+
+/* line 49, ../SCSS/style.scss */
+.col-4 .col-5 .col-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 1%;
+  padding-left: 1%;
+  box-sizing: border-box;
+}
+
+/* line 57, ../SCSS/style.scss */
+.col-12 {
+  width: 98%;
+  margin: 1%;
+}
+
+/* line 62, ../SCSS/style.scss */
+.col-5 {
+  width: 18%;
+  margin: 1%;
+  float: left;
+}
+
+/* line 69, ../SCSS/style.scss */
+.col-4 {
+  margin: 0.5%;
+  width: 32.333%;
+  float: left;
+  display: inline;
+}
+
+/* line 78, ../SCSS/style.scss */
+article {
+  border: 2px solid black;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+/* line 83, ../SCSS/style.scss */
+article img {
+  border: 0px;
+  width: 100%;
+}
+/* line 87, ../SCSS/style.scss */
+article p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+/* line 91, ../SCSS/style.scss */
+article:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+/* line 93, ../SCSS/style.scss */
+article:hover p {
+  color: royalblue;
+}
+/* line 96, ../SCSS/style.scss */
+article:hover img {
+  opacity: 0.7;
+}
+
+/* line 102, ../SCSS/style.scss */
+nav {
+  background-color: deeppink;
+  width: 100%;
+}
+/* line 105, ../SCSS/style.scss */
+nav ul {
+  text-align: center;
+}
+/* line 107, ../SCSS/style.scss */
+nav ul li {
+  line-height: 3;
+  margin: 50px;
+  display: inline;
+  margin-left: 50px;
+}
+/* line 112, ../SCSS/style.scss */
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* line 116, ../SCSS/style.scss */
+nav ul li a:hover {
+  color: aqua;
+}
+
+/* line 124, ../SCSS/style.scss */
+footer {
+  bottom: 0px;
+}
+/* line 126, ../SCSS/style.scss */
+footer ul {
+  box-sizing: border-box;
+}
+/* line 128, ../SCSS/style.scss */
+footer ul li {
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+/* line 131, ../SCSS/style.scss */
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* line 135, ../SCSS/style.scss */
+footer ul li a:hover {
+  color: aqua;
+}
+
+/* line 145, ../SCSS/style.scss */
+h1 {
+  font-size: 30px;
+}
+
+/* line 149, ../SCSS/style.scss */
+#last {
+  box-sizing: border-box;
+  border-left: 2px dotted black;
+  padding-left: 5px;
+}
+
+/* line 155, ../SCSS/style.scss */
+hr.style-two {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media (max-width: 1000px) and (min-width: 500px) {
+  /* line 12, ../SCSS/_media.scss */
+  .container {
+    width: 90vw;
+  }
+
+  /* line 16, ../SCSS/_media.scss */
+  .col-4 {
+    width: 48%;
+  }
+  /* line 19, ../SCSS/_media.scss */
+  .col-4:last-child {
+    width: 98%;
+  }
+  /* line 22, ../SCSS/_media.scss */
+  .col-4:last-child img {
+    height: auto;
+  }
+  /* line 26, ../SCSS/_media.scss */
+  .col-4 img {
+    max-height: 40vw;
+  }
+}
+/* line 32, ../SCSS/_media.scss */
+article:hover {
+  background-color: lightgreen;
+}
+/* line 35, ../SCSS/_media.scss */
+article:hover p {
+  background-color: aqua;
+}
+
+/* line 40, ../SCSS/_media.scss */
+nav {
+  background-color: greenyellow;
+}
+/* line 43, ../SCSS/_media.scss */
+nav ul li {
+  margin: 15px auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1001px) {
+  /* line 52, ../SCSS/_media.scss */
+  main {
+    width: 100%;
+    display: block;
+    height: 60vh;
+  }
+
+  /* line 58, ../SCSS/_media.scss */
+  article:hover {
+    background-color: lightpink;
+  }
+  /* line 61, ../SCSS/_media.scss */
+  article:hover p {
+    background-color: red;
+  }
+
+  /* line 65, ../SCSS/_media.scss */
+  nav {
+    background-color: deeppink;
+  }
+  /* line 67, ../SCSS/_media.scss */
+  nav ul {
+    text-align: center;
+  }
+  /* line 69, ../SCSS/_media.scss */
+  nav ul li {
+    line-height: 3;
+    margin: 50px;
+    display: inline;
+    margin-left: 50px;
+  }
+
+  /* line 77, ../SCSS/_media.scss */
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 499px) {
+  /* line 84, ../SCSS/_media.scss */
+  article:hover {
+    background-color: red;
+  }
+  /* line 87, ../SCSS/_media.scss */
+  article:hover p {
+    background-color: greenyellow;
+  }
+
+  /* line 91, ../SCSS/_media.scss */
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  /* line 95, ../SCSS/_media.scss */
+  .container {
+    width: 85vw;
+    padding: 5vw;
+  }
+
+  /* line 100, ../SCSS/_media.scss */
+  .col-4 {
+    width: 98%;
+  }
+  /* line 102, ../SCSS/_media.scss */
+  .col-4 img {
+    max-height: 70vw;
+  }
+
+  /* line 108, ../SCSS/_media.scss */
+  nav {
+    background-color: skyblue;
+  }
+  /* line 111, ../SCSS/_media.scss */
+  nav ul li {
+    margin: auto;
+    margin-left: auto;
+  }
+}

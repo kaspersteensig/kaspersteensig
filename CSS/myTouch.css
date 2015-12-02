@@ -108,7 +108,7 @@ article p {
 }
 /* line 91, ../SCSS/style.scss */
 article:hover {
-  background-color: rgba(255, 0, 0, 0);
+  background-color: rgba(255, 0, 0, 0.3);
 }
 /* line 93, ../SCSS/style.scss */
 article:hover p {
@@ -177,13 +177,14 @@ h1 {
 #last {
   box-sizing: border-box;
   border-left: 2px dotted black;
+  padding-left: 5px;
 }
 
-/* line 154, ../SCSS/style.scss */
+/* line 155, ../SCSS/style.scss */
 hr.style-two {
   border: 0;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 @media (max-width: 1000px) and (min-width: 500px) {
@@ -206,7 +207,7 @@ hr.style-two {
   }
   /* line 26, ../SCSS/_media.scss */
   .col-4 img {
-    height: 40vw;
+    max-height: 40vw;
   }
 }
 /* line 32, ../SCSS/_media.scss */
@@ -294,7 +295,7 @@ nav ul li {
   }
   /* line 102, ../SCSS/_media.scss */
   .col-4 img {
-    height: 70vw;
+    max-height: 70vw;
   }
 
   /* line 108, ../SCSS/_media.scss */

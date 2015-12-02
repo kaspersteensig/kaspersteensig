@@ -177,9 +177,10 @@ h1 {
 #last {
   box-sizing: border-box;
   border-left: 2px dotted black;
+  padding-left: 5px;
 }
 
-/* line 154, ../SCSS/style.scss */
+/* line 155, ../SCSS/style.scss */
 hr.style-two {
   border: 0;
   height: 2px;
